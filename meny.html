@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurang & Pizzeria Melody</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="javascripts\index.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-items">
+        <img src="Images/DSC09202.png" alt="Melody Logotyp" class="logotype">
+      
+
+       <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="openinghours.html">Öppettider</a></li>
+          <li><a href="kontakt.html">Kontakt</a>
+          </li>
+          <li><a href="index.html">Startsida</a></li>
+          <li>
+  <a href="menyEng.html" class="flag-home">
+    <img src="Images/Flag_of_the_United_Kingdom_(3-5).svg" alt="English" />
+  </a>
+</li>
+        </ul> <!-- nav-links -->
+      </nav> <!-- navbar -->
+    </div> <!-- /header-items -->
+    
+   <div class="sub-header-items">
+  <a href="https://maps.app.goo.gl/MtnfY2Zr28mybB9Z9">
+    <div class="address">
+      <h3>Pizzeria Melody i Vinslöv</h3>
+      <h2>Tel: 044-805 10</h2>
+      Torget 3, 288 31 Vinslöv (<u>karta</u>)
+    </div>
+  </a>
+  <h1 id="open-status" class="open-status"></h1>
+
+      
+        <div class=" social">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>  
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg>
+          </div>
+          
+          <div> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg>
+          </div>
+        </div> <!-- /social -->
+    </div> <!-- /header-items -->
+  </header>
+  <div class="meny-main">
+  <nav class="menu-nav">
+  <a href="#pizzor">Pizzor</a>
+  <a href="#alacarte">À la Carte</a>
+  <a href="#gyros">Gyrosmeny</a>
+  <a href="#burgare">Hamburgare & Sandwich</a>
+  <a href="#pasta">Pasta & Barnmeny</a>
+  <a href="#sallad">Sallad & Bakad Potatis</a>
+  <a href="#top" class="top-link">↑ Till toppen</a>
+</nav>
+<section class="pizza-menu" id="pizzor">
+  <div class="menu-title">
+    <h1>Pizzor</h1>
+    <p>I alla våra goda pizzor ingår tomatsås och ost.</p>
+    <p>Glutenfria pizzor +25:- · Barnpizza 5:- under ordinarie pris</p>
+  </div>
+
+  <!-- KLASS 1 -->
+
+<div class="pizza-category">
+  <h2>Klass 1 <span>105:- / Familje 240:-</span></h2>
+
+  <div class="pizza-row">
+    <h3>01. Margherita</h3>
+    <p>tomat, ost</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>03. Vesuvio</h3>
+    <p>skinka</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>04. Al Funghi</h3>
+    <p>champinjoner</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>05. Pescatore</h3>
+    <p>tonfisk, lök</p>
+  </div>
+</div>
+
+
+  <div class="pizza-category">
+    <!-- KLASS 2 -->
+
+<div class="pizza-category">
+  <h2>Klass 2 <span>110:- / Familje 250:-</span></h2>
+
+  <div class="pizza-row">
+    <h3>06. Capricciosa</h3>
+    <p>skinka, champinjoner</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>07. Hawaii</h3>
+    <p>skinka, ananas</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>08. Bussola</h3>
+    <p>skinka, räkor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>09. Marinara</h3>
+    <p>räkor, musslor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>10. Opera</h3>
+    <p>champinjoner, räkor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>11. La Mafia</h3>
+    <p>paprika, lök, bacon</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>12. Bolognese</h3>
+    <p>köttfärssås, lök</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>13. Salami</h3>
+    <p>salami, lök, paprika</p>
+  </div>
+</div>
+
+
+  <!-- KLASS 3 -->
+
+<div class="pizza-category">
+  <h2>Klass 3 <span>120:- / Familje 270:-</span></h2>
+
+  <div class="pizza-row">
+    <h3>14. Hawaii Special</h3>
+    <p>skinka, ananas, räkor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>15. Mamma Mia</h3>
+    <p>skinka, champinjoner, räkor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>16. Bombay</h3>
+    <p>skinka, champinjoner, ananas</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>17. Novara</h3>
+    <p>kräftstjärtar, sparris, vitlökssås</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>18. Fantazia</h3>
+    <p>ananas, banan, jordnötter, curry</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>19. Monaco</h3>
+    <p>skinka, bacon, lök</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>20. Grekisk Pizza</h3>
+    <p>salladsost, lök, färska tomater, oliver</p>
+  </div>
+</div>
+
+<!-- KLASS 4 -->
+
+<div class="pizza-category">
+  <h2>Klass 4 <span>120:- / Familje 270:-</span></h2>
+
+  <div class="pizza-row"><h3>21. Indiana</h3><p>bacon, köttfärssås, lök, gorgonzola</p></div>
+  <div class="pizza-row"><h3>22. Salami Special</h3><p>färska tomater, lök, oliver, salami</p></div>
+  <div class="pizza-row"><h3>23. Havets Special</h3><p>smak av krabba, räkor, musslor, tonfisk</p></div>
+  <div class="pizza-row"><h3>24. Santa Maria</h3><p>skinka, köttfärssås, champinjoner, räkor, färsk vitlök</p></div>
+  <div class="pizza-row"><h3>25. Roma</h3><p>skinka, champinjoner, räkor, ananas</p></div>
+  <div class="pizza-row"><h3>26. Gondola</h3><p>kyckling, paprika, smak av krabba, vitlökssås</p></div>
+  <div class="pizza-row"><h3>27. Quattro Stagioni</h3><p>skinka, färska champinjoner, räkor, musslor, kronärtskocka</p></div>
+  <div class="pizza-row"><h3>28. Vegetarisk</h3><p>färska champinjoner, lök, paprika, oliver, sparris, färska tomater, kronärtskocka</p></div>
+  <div class="pizza-row"><h3>29. Kycklingpizza</h3><p>kyckling, banan, ananas, curry</p></div>
+  <div class="pizza-row"><h3>30. Peperoni</h3><p>bacon, salami, färska champinjoner, köttfärssås, lök, färsk vitlök</p></div>
+</div>
+
+<!-- KLASS 5 -->
+
+<div class="pizza-category">
+  <h2>Klass 5 <span>120:- / Familje 270:-</span></h2>
+
+  <div class="pizza-row"><h3>31. Milano</h3><p>fläskfilé, färska tomater, lök, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>32. Bagarens Special</h3><p>fläskfilé, färska champinjoner, lök, paprika, persilja, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>33. Favoriten</h3><p>fläskfilé, bacon, färska champinjoner, lök, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>34. Ciao Ciao</h3><p>fläskfilé, lök, färsk vitlök, färska champinjoner, bearnaisesås (halvinbakad)</p></div>
+  <div class="pizza-row"><h3>35. Viking</h3><p>gyroskött, isbergssallad, tomat, gurka, lök, feferoni, valfri sås (halvinbakad)</p></div>
+  <div class="pizza-row"><h3>36. Viking Special</h3><p>kyckling, isbergssallad, tomat, gurka, lök, feferoni, valfri sås (halvinbakad)</p></div>
+  <div class="pizza-row"><h3>37. Acapulco</h3><p>oxfilé, färska champinjoner, lök, jalapeno, färsk vitlök, tacosås</p></div>
+  <div class="pizza-row"><h3>38. Azteka</h3><p>skinka, lök, jalapeno, tacosås, vitlökssås</p></div>
+  <div class="pizza-row"><h3>39. Mexicana</h3><p>skinka, färska champinjoner, lök, färsk vitlök, köttfärssås, tacosås</p></div>
+  <div class="pizza-row"><h3>40. Melodi Mix</h3><p>gyroskött, skinka, färska champinjoner, lök, jalapeno, färsk vitlök, stark sås</p></div>
+  <div class="pizza-row"><h3>41. Rörmokare</h3><p>skinka, färska champinjoner, lök, bacon, färsk tomat, räkor</p></div>
+  <div class="pizza-row"><h3>42. San Marino</h3><p>kyckling, färska champinjoner, lök, paprika, färsk tomat</p></div>
+  <div class="pizza-row"><h3>43. Gorgonzola</h3><p>färska champinjoner, oxfilé, fläskfilé, gorgonzola</p></div>
+  <div class="pizza-row"><h3>44. Kebab Istanbul</h3><p>kebabkött, färska tomater, feferoni, gurka, isbergssallad, lök, valfri sås</p></div>
+  <div class="pizza-row"><h3>45. Husets Special</h3><p>skinka, lök, jalapeno, gyroskött, feferoni, valfri sås</p></div>
+  <div class="pizza-row"><h3>46. Torino</h3><p>skinka, gyroskött, valfri sås</p></div>
+  <div class="pizza-row"><h3>47. Sverige</h3><p>gyroskött, lök, champinjoner, feferoni, valfri sås</p></div>
+  <div class="pizza-row"><h3>48. Gyrospizza</h3><p>gyroskött, lök, feferoni, valfri sås</p></div>
+</div>
+
+<!-- KLASS 6 -->
+
+<div class="pizza-category">
+  <h2>Klass 6 <span>125:- / Familje 280:-</span></h2>
+
+  <div class="pizza-row"><h3>49. Gyrospizza Special</h3><p>gyroskött, isbergssallad, tomat, gurka, lök, feferoni, valfri sås</p></div>
+  <div class="pizza-row"><h3>50. Asia</h3><p>gyroskött, lök, pommes, feferoni, valfri sås</p></div>
+  <div class="pizza-row"><h3>51. Julia Special</h3><p>skinka, bacon, lök, gyroskött, valfri sås</p></div>
+  <div class="pizza-row"><h3>52. Olympia</h3><p>skinka, färska champinjoner, räkor, gyroskött, valfri sås</p></div>
+  <div class="pizza-row"><h3>53. Juventus</h3><p>skinka, gyroskött, pommes, valfri sås</p></div>
+  <div class="pizza-row"><h3>54. Sara Special</h3><p>oxfilé, färska champinjoner, räkor, sparris, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>55. Ceasar</h3><p>oxfilé, färska champinjoner, färska tomater, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>56. Plank Pizza 1</h3><p>fläskfilé, lök, kantareller, soltorkad tomat, potatismos, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>57. Plank Pizza 2</h3><p>oxfilé, färska champinjoner, potatismos, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>58. Black & White</h3><p>oxfilé, fläskfilé, färska tomater, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>59. Rimini</h3><p>lök, oxfilé, fläskfilé, pommes, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>60. Ubåt</h3><p>skinka, räkor, gyroskött, valfri sås (dubbelinbakad)</p></div>
+</div>
+
+<!-- AMERIKANSK PANPIZZA -->
+
+<div class="pizza-category">
+  <h2>Amerikansk Panpizza</h2>
+
+  <div class="pizza-row">
+    <h3>Nr 01–30</h3>
+    <p>Small 140:- · Medium 180:- · Large 260:-</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>Nr 31–85</h3>
+    <p>Small 180:- · Medium 260:- · Large 295:-</p>
+  </div>
+</div>
+
+<!-- MOZZARELLA PIZZOR -->
+
+<div class="pizza-category">
+  <h2>Mozzarella Pizzor <span>130:- / Familje 290:-</span></h2>
+
+  <div class="pizza-row"><h3>61. Kreta</h3><p>mozzarella, lök, färska champinjoner, färska tomater, oxfilé, färsk vitlök, ruccola</p></div>
+  <div class="pizza-row"><h3>62. Björn Special</h3><p>mozzarella, paprika, lök, färska tomater, köttfärssås</p></div>
+  <div class="pizza-row"><h3>63. Pizza Formaggi</h3><p>mozzarella, gorgonzola, parmesanost, ost, ruccola</p></div>
+  <div class="pizza-row"><h3>64. Avellino</h3><p>mozzarella, peperoni korv, färska tomater, färsk paprika, salami, ruccola</p></div>
+
+  <div class="pizza-row"><h3>65. Viktoria</h3><p>räkor, tonfisk, lök</p></div>
+  <div class="pizza-row"><h3>66. Daniel Special</h3><p>skinka, kyckling, majs, lök, beasås</p></div>
+  <div class="pizza-row"><h3>67. Napoli</h3><p>skinka, räkor, smak av krabba</p></div>
+  <div class="pizza-row"><h3>68. Mama Rosa</h3><p>bacon, salami, svamp, paprika</p></div>
+  <div class="pizza-row"><h3>69. John Blund</h3><p>skinka, lök, bacon, ägg</p></div>
+  <div class="pizza-row"><h3>70. Hässleholms Special</h3><p>oxfilé, gorgonzola, färsk paprika, lök, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>71. Delfi</h3><p>oxfilé, skinka, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>72. Palermo</h3><p>fläskfilé, skinka, gorgonzola, lök, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>73. Florida</h3><p>fläskfilé, banan, curry, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>74. Apache</h3><p>fläskfilé, räkor, färsk vitlök, färska tomater, lök, jalapeno, tacosås</p></div>
+  <div class="pizza-row"><h3>75. Contti</h3><p>kebabkött, ananas, banan, feferoni, jordnötter, valfri sås</p></div>
+  <div class="pizza-row"><h3>76. Kyckling Special</h3><p>kyckling, jalapeno, lök, färsk vitlök, tacosås, stark sås</p></div>
+  <div class="pizza-row"><h3>77. Hawaii Gyros</h3><p>gyroskött, skinka, ananas, valfri sås</p></div>
+  <div class="pizza-row"><h3>78. Mafiosa</h3><p>fläskfilé, champinjoner, lök, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>79. Bella</h3><p>fläskfilé, skinka, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>80. Aspendos</h3><p>gyroskött, champinjoner, gorgonzola, vitlökssås</p></div>
+  <div class="pizza-row"><h3>81. Dallas</h3><p>köttfärssås, oxfilé, ananas, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>82. Vinslövs Special</h3><p>oxfilé, champinjoner, lök, gorgonzola</p></div>
+  <div class="pizza-row"><h3>83. Miami</h3><p>oxfilé, färsk tomat, kantareller, bearnaisesås</p></div>
+  <div class="pizza-row"><h3>84. Emil Special</h3><p>skinka, räkor, kyckling, curry</p></div>
+  <div class="pizza-row"><h3>85. Lomie Special</h3><p>oxfilé, fläskfilé, gyroskött, kyckling, svamp, lök, bearnaisesås, mild sås</p></div>
+</div>
+
+
+  <!-- INBAKADE PIZZOR -->
+
+<div class="pizza-category">
+  <h2>Inbakade Pizzor <span>120:-</span></h2>
+
+  <div class="pizza-row">
+    <h3>86. Calzone</h3>
+    <p>skinka</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>87. Calzone Hawaii</h3>
+    <p>skinka, ananas</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>88. Calzone Capricciosa</h3>
+    <p>skinka, champinjoner</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>89. Calzone Bussola</h3>
+    <p>skinka, räkor</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>90. Kung Calzone</h3>
+    <p>gyroskött, champinjoner, lök, vitlök, mild sås</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>91. Calzone Special</h3>
+    <p>skinka, räkor, champinjoner</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>92. Calzone Gyros</h3>
+    <p>gyroskött, skinka, mild sås</p>
+  </div>
+
+  <div class="pizza-row">
+    <h3>93. Calzone Kyckling</h3>
+    <p>kyckling, banan, jordnötter, curry</p>
+  </div>
+</div>
+
+</section>
+
+<section class="pizza-menu" id="alacarte">
+
+  <div class="menu-title">
+    <h1>À la Carte</h1>
+    <p>Vällagade klassiker serverade med utvalda tillbehör.</p>
+  </div>
+
+  <div class="pizza-category">
+    <h2>À la Carte</h2>
+
+
+<div class="pizza-row">
+  <h3>Oxfilé</h3>
+  <p>stekt potatis, sparris, bearnaisesås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Black & White</h3>
+  <p>grillad tomat, pommes/stekt potatis, sparris, bearnaisesås, rödvinssås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Fläskfilé</h3>
+  <p>pommes/stekt potatis, sparris, bearnaisesås eller kantarellsås</p>
+  <span>249:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Lövbit</h3>
+  <p>pommes, bearnaisesås</p>
+  <span>189:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Krögarschnitzel</h3>
+  <p>stekt potatis, citron, bearnaisesås</p>
+  <span>189:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kycklingfilé</h3>
+  <p>grillad tomat, pommes, bearnaisesås</p>
+  <span>189:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Laxfilé</h3>
+  <p>kokt potatis, citron, remouladesås</p>
+  <span>199:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Spättafilé</h3>
+  <p>kokt potatis, citron, remouladsås</p>
+  <span>160:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Ryggbiff</h3>
+  <p>pommes/stekt potatis, sparris, bearnaisesås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Entrecote</h3>
+  <p>pommes/stekt potatis, sparris, bearnaisesås</p>
+  <span>299:-</span>
+</div>
+
+
+  </div>
+
+  <div class="pizza-category">
+    <h2>Plankstek</h2>
+
+
+<div class="pizza-row">
+  <h3>Oxfilé</h3>
+  <p>grillade grönsaker, sparris, bearnaisesås eller kantarellsås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Oxfilé Black & White</h3>
+  <p>grillade grönsaker, sparris, bearnaisesås och rödvinssås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Fläskfilé</h3>
+  <p>grillade grönsaker, sparris, bearnaisesås eller kantarellsås</p>
+  <span>249:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Laxfilé</h3>
+  <p>grillade grönsaker, sparris, citron, remouladesås</p>
+  <span>249:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Entrecôte</h3>
+  <p>grillade grönsaker, sparris, bearnaisesås</p>
+  <span>299:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Ryggbiff</h3>
+  <p>grillade grönsaker, sparris, bearnaisesås</p>
+  <span>299:-</span>
+</div>
+
+
+  </div>
+
+</section>
+
+<section class="pizza-menu" id="gyros">
+
+  <div class="menu-title">
+    <h1>Gyrosmeny</h1>
+    <p>Serveras med färska grönsaker och valfri sås.</p>
+    <p>Välj mellan mild, stark, vitlök eller bearnaisesås.</p>
+  </div>
+
+  <!-- TALLRIKAR -->
+
+  <div class="pizza-category">
+    <h2>Tallrikar</h2>
+
+
+<div class="pizza-row">
+  <h3>Gyrostallrik</h3>
+  <p>gyroskött, pommes, isbergssallad, tomat, gurka, lök, feferoni, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kebabtallrik</h3>
+  <p>kebabkött, pommes, isbergssallad, tomat, gurka, lök, feferoni, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kycklingtallrik</h3>
+  <p>kyckling, pommes, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>130:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Falafeltallrik</h3>
+  <p>falafel, pommes, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Gyros & Kebab Tallrik</h3>
+  <p>gyros- och kebabkött, pommes, isbergssallad, tomat, gurka, lök, feferoni, valfri sås</p>
+  <span>130:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kebab & Kyckling Tallrik</h3>
+  <p>kebab- och kycklingkött, pommes, isbergssallad, tomat, gurka, lök, feferoni, valfri sås</p>
+  <span>130:-</span>
+</div>
+
+
+  </div>
+
+  <!-- RULLAR -->
+
+  <div class="pizza-category">
+    <h2>Rullar</h2>
+
+
+<div class="pizza-row">
+  <h3>Gyrosrulle</h3>
+  <p>gyroskött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kebabrulle</h3>
+  <p>kebabkött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kycklingrulle</h3>
+  <p>kyckling, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Falafelrulle</h3>
+  <p>falafel, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+
+  </div>
+
+  <!-- I BRÖD -->
+
+  <div class="pizza-category">
+    <h2>I Bröd</h2>
+
+
+<div class="pizza-row">
+  <h3>Gyros i Bröd</h3>
+  <p>gyroskött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kebab i Bröd</h3>
+  <p>kebabkött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kyckling i Bröd</h3>
+  <p>kyckling, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Falafel i Bröd</h3>
+  <p>falafel, isbergssallad, tomat, gurka, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+
+  </div>
+
+</section>
+<section class="pizza-menu" id="burgare">
+
+  <div class="menu-title">
+    <h1>Hamburgare & Sandwich</h1>
+    <p>Serveras med färska råvaror och tillbehör.</p>
+  </div>
+
+  <!-- HAMBURGARE -->
+  <div class="pizza-category">
+    <h2>Hamburgare</h2>
+
+    <div class="pizza-row">
+      <h3>Hamburgare med Bröd, 90 gr</h3>
+      <p>Klassisk hamburgare med bröd</p>
+      <span>75:-</span>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Hamburgertallrik, 90 gr</h3>
+      <p>Pommes</p>
+      <span>105:-</span>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Hamburgare med Bröd, 150 gr</h3>
+      <p>Klassisk hamburgare med bröd</p>
+      <span>95:-</span>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Hamburgertallrik, 150 gr</h3>
+      <p>Pommes</p>
+      <span>120:-</span>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Husets Burgare, 200 gr</h3>
+      <p>Ost, bacon, pommes</p>
+      <span>140:-</span>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Ostburgare, 150 gr</h3>
+      <p>Ost, ägg, pommes</p>
+      <span>140:-</span>
+    </div>
+  </div>
+
+  <!-- SANDWICH -->
+  <div class="pizza-category">
+    <h2>Sandwich <span>120:-</span></h2>
+
+    <div class="pizza-row">
+      <h3>Kebabsandwich</h3>
+      <p>Kebabkött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Kyckling Sandwich</h3>
+      <p>Kycklingkött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+    </div>
+
+    <div class="pizza-row">
+      <h3>Gyrossandwich</h3>
+      <p>Gyroskött, isbergssallad, tomat, gurka, lök, valfri sås</p>
+    </div>
+  </div>
+
+</section>
+ <section class="pizza-menu" id="pasta">
+      <div class="menu-title">
+        <h1>Pasta & Barnmeny</h1>
+        <p>Vällagade pastarätter och favoriter för de yngre gästerna.</p>
+      </div>
+
+      <!-- PASTA -->
+      <div class="pizza-category">
+        <h2>Pasta</h2>
+
+        <div class="pizza-row">
+          <h3>Spaghetti Bolognese</h3>
+          <p>köttfärssås</p>
+          <span>150:-</span>
+        </div>
+
+        <div class="pizza-row">
+          <h3>Spaghetti Carbonara</h3>
+          <p>parmesanost, ostsås, bacon, persilja, stekt ägg</p>
+          <span>169:-</span>
+        </div>
+
+        <div class="pizza-row">
+          <h3>Spaghetti Napolitana</h3>
+          <p>grönsaker, kycklingfilé, ostsås, persilja, parmesanost</p>
+          <span>169:-</span>
+        </div>
+      </div>
+
+      <!-- BARNMENY -->
+      <div class="pizza-category">
+        <h2>Barnmeny <span>99:-</span></h2>
+
+        <div class="pizza-row">
+          <h3>Chicken Nuggets</h3>
+          <p>6 st med pommes</p>
+        </div>
+
+        <div class="pizza-row">
+          <h3>Spaghetti</h3>
+          <p>med köttfärssås</p>
+        </div>
+
+        <div class="pizza-row">
+          <h3>Köttbullar</h3>
+          <p>med potatismos och lingon</p>
+        </div>
+      </div>
+    </section>
+    <section class="pizza-menu" id="sallad">
+
+  <div class="menu-title">
+    <h1>Sallad & Bakad Potatis</h1>
+    <p>Isbergssallad, tomat, gurka, lök, paprika, champinjoner, oliver, ananas, majs, dressing och nybakat bröd ingår till alla sallader.</p>
+  </div>
+
+  <!-- SALLADER -->
+
+  <div class="pizza-category">
+    <h2>Sallader</h2>
+
+<div class="pizza-row">
+  <h3>Gyrossallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Skinksallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Västkustsallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Grekisk Sallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kycklingsallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Tonfisksallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Salamisallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Vegetarisk Sallad</h3>
+  <p></p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Melody Sallad</h3>
+  <p></p>
+  <span>130:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Räksallad</h3>
+  <p>gyroskött, fetaost, feferoni, lök, oliver</p>
+  <span>130:-</span>
+</div>
+
+  </div>
+
+  <!-- BAKAD POTATIS -->
+
+  <div class="pizza-category">
+    <h2>Bakad Potatis <span>120:-</span></h2>
+
+<div class="pizza-row">
+  <h3>Skinka</h3>
+  <p>skinka, ost, ananas, isbergssallad, gurka, tomat, lök, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Kyckling</h3>
+  <p>kyckling, isbergssallad, gurka, tomat, ananas, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Tonfisk</h3>
+  <p>tonfisk, isbergssallad, gurka, tomat, lök, majs, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Gyros</h3>
+  <p>gyroskött, isbergssallad, gurka, tomat, lök, feferoni, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+<div class="pizza-row">
+  <h3>Räkor</h3>
+  <p>räkor, isbergssallad, gurka, tomat, majs, citron, valfri sås</p>
+  <span>120:-</span>
+</div>
+
+  </div>
+
+</section>
+</div>
+
